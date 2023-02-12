@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-success">
     <a class="navbar-brand" href="#"><b>Journo</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,23 +20,23 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-dark" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Profile</a>
+                <a class="nav-link text-dark" href="#">Profile</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="#">Post</a>
+                <a class="nav-link text-dark" href="#">Post</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link text-dark" href="#">About</a>
             </li>
         </ul>
         {#        <form class="form-inline my-2 my-lg-0">#}
         {#            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">#}
         {#            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>#}
         {#        </form>#}
-        <button class="btn btn-info">Log in</button>
+        <button class="btn btn-dark">Log in</button>
     </div>
 </nav>
 
@@ -49,8 +49,8 @@
             <div class="single_blog_wrapper pt-5">
                 <a href="" class="text-decoration-none">
                     <span class="blog">
-                        <h4>This is a title</h4>
-                        <p class="shortDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos dolor doloremque error laudantium officia omnis quos ut veritatis? Architecto deserunt est inventore optio, porro praesentium vero. Accusantium aut culpa dolorem exercitationem facere molestiae nam obcaecati pariatur sed. Aspernatur corporis distinctio dolores error labore minus natus nemo suscipit? Maiores, nulla.</p>
+                        <h4>The Ultimate Guide to Meal Planning for a Busy Lifestyle</h4>
+                        <p class="shortDescription text-dark">Meal planning can be a lifesaver for those with busy schedules. In this comprehensive guide, we cover everything you need to know about meal planning, including how to get started, meal prep tips, and healthy recipe ideas.</p>
                         <a href="#" class="btn btn-success btn-sm">Read more</a>
                     </span>
                 </a>
@@ -58,8 +58,35 @@
             <div class="single_blog_wrapper pt-5">
                 <a href="" class="text-decoration-none">
                     <span class="blog">
-                        <h4>This is a title</h4>
-                        <p class="shortDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos dolor doloremque error laudantium officia omnis quos ut veritatis? Architecto deserunt est inventore optio, porro praesentium vero. Accusantium aut culpa dolorem exercitationem facere molestiae nam obcaecati pariatur sed. Aspernatur corporis distinctio dolores error labore minus natus nemo suscipit? Maiores, nulla.</p>
+                        <h4>The Top Trends in Home Decor for 2023</h4>
+                        <p class="shortDescription text-dark">Are you planning on giving your home a makeover this year? In this post, we take a look at the top home decor trends for 2023, including bold colors, eco-friendly materials, and unique textures.</p>
+                        <a href="#" class="btn btn-success btn-sm">Read more</a>
+                    </span>
+                </a>
+            </div>
+            <div class="single_blog_wrapper pt-5">
+                <a href="" class="text-decoration-none">
+                    <span class="blog">
+                        <h4>The Top Trends in Home Decor for 2023</h4>
+                        <p class="shortDescription text-dark">Are you planning on giving your home a makeover this year? In this post, we take a look at the top home decor trends for 2023, including bold colors, eco-friendly materials, and unique textures.</p>
+                        <a href="#" class="btn btn-success btn-sm">Read more</a>
+                    </span>
+                </a>
+            </div>
+            <div class="single_blog_wrapper pt-5">
+                <a href="" class="text-decoration-none">
+                    <span class="blog">
+                        <h4>The Top Trends in Home Decor for 2023</h4>
+                        <p class="shortDescription text-dark">Are you planning on giving your home a makeover this year? In this post, we take a look at the top home decor trends for 2023, including bold colors, eco-friendly materials, and unique textures.</p>
+                        <a href="#" class="btn btn-success btn-sm">Read more</a>
+                    </span>
+                </a>
+            </div>
+            <div class="single_blog_wrapper pt-5">
+                <a href="" class="text-decoration-none">
+                    <span class="blog">
+                        <h4>The Top Trends in Home Decor for 2023</h4>
+                        <p class="shortDescription text-dark">Are you planning on giving your home a makeover this year? In this post, we take a look at the top home decor trends for 2023, including bold colors, eco-friendly materials, and unique textures.</p>
                         <a href="#" class="btn btn-success btn-sm">Read more</a>
                     </span>
                 </a>
@@ -67,6 +94,14 @@
         </div>
     </div>
 </section>
+
+
+
+<footer class="footer  p-3 mt-5 bg-dark text-dark text-center ">
+  <div class="container">
+    <span class="text-muted">@copyright</span>
+  </div>
+</footer>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -80,11 +115,11 @@
         crossorigin="anonymous"></script>
 
 <script>
-  var shortDescs = document.querySelectorAll(".shortDescription");
-  shortDescs.forEach(function(shortDesc) {
-    var shortenedDesc = shortDesc.innerHTML.substring(0,100) + "...";
-    shortDesc.innerHTML = shortenedDesc;
-  });
+    var shortDescs = document.querySelectorAll(".shortDescription");
+    shortDescs.forEach(function (shortDesc) {
+        var shortenedDesc = shortDesc.innerHTML.substring(0, 100) + "...";
+        shortDesc.innerHTML = shortenedDesc;
+    });
 </script>
 </body>
 </html>

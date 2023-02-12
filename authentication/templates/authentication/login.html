@@ -13,8 +13,9 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #17a2b8;
+            position: relative;
             height: 100vh;
+            {#background-color: #17a2b8;#}
         }
 
         #login .container #login-row #login-column #login-box {
@@ -32,11 +33,18 @@
         #login .container #login-row #login-column #login-box #login-form #register-link {
             margin-top: -85px;
         }
+
+        footer {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
     </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-success">
-    <a class="navbar-brand" href="#"><b>Journo</b></a>
+    <a class="navbar-brand" href="{% url 'home' %}"><b>Journo</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,7 +53,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link text-dark" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-dark" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-dark" href="#">Profile</a>
@@ -61,7 +69,6 @@
         {#            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">#}
         {#            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>#}
         {#        </form>#}
-        <button class="btn btn-dark">Log in</button>
     </div>
 </nav>
 

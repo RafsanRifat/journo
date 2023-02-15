@@ -37,18 +37,21 @@
         {#            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>#}
         {#        </form>#}
         {% if user.is_authenticated %}
-         <a href="{% url 'logout' %}" class="btn btn-warning">Logout</a>
+            <a href="{% url 'logout' %}" class="btn btn-warning">Logout</a>
         {% else %}
-        <a href="{% url 'login' %}" class="btn btn-dark">Log in</a>
+            <a href="{% url 'login' %}" class="btn btn-dark">Log in</a>
         {% endif %}
     </div>
 </nav>
 
+
+{#Blog Section#}
 <section class="mt-5">
     <div class="container">
         <div class="blog_header text-center mb-5">
             <h2><b>Blog posts from our bloggers</b></h2>
         </div>
+
         <div class="blog_wrapper">
             <div class="single_blog_wrapper pt-5">
                 <a href="" class="text-decoration-none">
@@ -95,16 +98,34 @@
                     </span>
                 </a>
             </div>
+            <div class="single_blog_wrapper pt-5">
+                <a href="" class="text-decoration-none">
+                    <span class="blog">
+                        <h4>The Top Trends in Home Decor for 2023</h4>
+                        <p class="shortDescription text-dark">Are you planning on giving your home a makeover this year? In this post, we take a look at the top home decor trends for 2023, including bold colors, eco-friendly materials, and unique textures.</p>
+                        <a href="#" class="btn btn-success btn-sm">Read more</a>
+                    </span>
+                </a>
+            </div>
+            <div class="single_blog_wrapper pt-5">
+                <a href="" class="text-decoration-none">
+                    <span class="blog">
+                        <h4>The Top Trends in Home Decor for 2023</h4>
+                        <p class="shortDescription text-dark">Are you planning on giving your home a makeover this year? In this post, we take a look at the top home decor trends for 2023, including bold colors, eco-friendly materials, and unique textures.</p>
+                        <a href="#" class="btn btn-success btn-sm">Read more</a>
+                    </span>
+                </a>
+            </div>
         </div>
+
     </div>
 </section>
 
 
-
 <footer class="footer  p-3 mt-5 bg-dark text-dark text-center ">
-  <div class="container">
-    <span class="text-muted">@copyright</span>
-  </div>
+    <div class="container">
+        <span class="text-muted">@copyright</span>
+    </div>
 </footer>
 
 

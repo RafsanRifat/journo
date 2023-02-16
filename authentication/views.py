@@ -24,3 +24,7 @@ def logout_view(request):
 
 def profile_view(request):
     return render(request, 'authentication/profile.html')
+
+
+def registration(request):
+    pass
